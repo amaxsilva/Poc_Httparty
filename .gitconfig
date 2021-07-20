@@ -1,0 +1,14 @@
+[user]
+    email = amax.kerickson@gmail.com
+    name = Amax kerickson
+[core]
+    editor = core --wait
+
+[alias]
+    s = !git status
+    c = !git add --all && git commit -m 
+    b = !git branch
+    d = !git branch -d
+    check = !git checkout
+
+    # git config --global -e
