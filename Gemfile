@@ -2,3 +2,4 @@
 
 gem 'rspec'
 gem 'httparty'
+gem 'faker'
