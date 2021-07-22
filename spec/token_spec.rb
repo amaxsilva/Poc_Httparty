@@ -17,7 +17,7 @@ describe 'usando ', :token do
             Accept: 'application/vnd.taskmanager.v2',
             'Content-Type': 'application/json'
         } 
-        
+        #url /users é para criação de usuários
         @criar = Criar.post('/users', body: @body, headers: @header)
         puts @criar.body
         puts @criar.parsed_response['data']['attributes']['auth-token']
@@ -39,6 +39,7 @@ describe 'usando ', :token do
             Authorization: "#{@criar.parsed_response['data']['attributes']['auth-token']}"      
             #Authorization:  "pode ser passado o token aqui caso seja fixo "
         }
+        #url /session é para login de usuaários
         @login = Criar.post('/sessions', body: @body_one, headers: @header_one)
     end
     
