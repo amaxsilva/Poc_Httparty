@@ -14,6 +14,6 @@ describe 'efetuar um get', :respostas do
       expect(@respostas.parsed_response['data']['attributes']['email']).to eql 'TESTANDORUBYPut@gmail.com'
       expect(@respostas.parsed_response['data']['attributes']['age']).to eql 11
 
-    end
+    end 
     
 end
